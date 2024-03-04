@@ -44,7 +44,14 @@ def load_user(user_id):
 admin = Admin(app,index_view=MainAdminIndexView(),template_mode='bootstrap3')
 admin.add_view(AllModelView(User,db.session))
 
-with open("static/json/blog.json") as file:
+
+# Get current working directory
+getcwd = os.getcwd()
+
+if 'home' in getcwd:
+    getcwd += '/mysite'
+
+with open(getcwd+"/static/json/blog.json") as file:
         blog_posts = json.load(file)
 
 @app.route('/login',methods=['GET','POST'])
