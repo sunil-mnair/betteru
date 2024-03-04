@@ -44,6 +44,9 @@ def load_user(user_id):
 admin = Admin(app,index_view=MainAdminIndexView(),template_mode='bootstrap3')
 admin.add_view(AllModelView(User,db.session))
 
+with open("static/json/blog.json") as file:
+        blog_posts = json.load(file)
+
 @app.route('/login',methods=['GET','POST'])
 def login():
         
@@ -107,12 +110,20 @@ def logout():
 
 @app.route('/',methods=['GET','POST'])
 def index():
+    return render_template("index.html",blog_posts=blog_posts)
 
-    return render_template("index.html")
 @app.route('/blog',methods=['GET','POST'])
 def blog():
+    return render_template("blog.html",blog_posts=blog_posts)
 
-    return render_template("blog.html")
+@app.route('/blog_details',methods=['GET','POST'])
+def blog_details():
+    id = request.args.get("post")
+    blog_post = [post for post in blog_posts if post['id']==id][0]
+    
+   
+
+    return render_template("blog-details.html",blog_post=blog_post)
 
 @app.route('/recipes',methods=['GET','POST'])
 def recipes():
@@ -125,19 +136,19 @@ def recipes():
 @app.route('/sleeptracker',methods=['GET','POST'])
 def sleeptracker():
 
-    return render_template("sleeptracker.html",name=current_user.username)
+    return render_template("sleeptracker.html")
 
 @app.route('/workout',methods=['GET','POST'])
 def workout():
 
-    return render_template("workout.html",name=current_user.username)
+    return render_template("workout.html")
 
 @app.route('/moodtracker',methods=['GET','POST'])
 def moodtracker():
 
-    return render_template("moodtracker.html",name=current_user.username)
+    return render_template("moodtracker.html")
 
 @app.route('/todolist',methods=['GET','POST'])
 def todolist():
 
-    return render_template("todolist.html",name=current_user.username)
+    return render_template("todolist.html")

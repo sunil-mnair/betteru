@@ -420,6 +420,7 @@
 
         <div class="row gy-4">
 
+          {% for post in blog_posts %}
           <div class="col-xl-4 col-md-6">
             <article>
 
@@ -427,77 +428,28 @@
                 <img src="static/img/blog/blog-1.jpg" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Goals</p>
+              <p class="post-category">{{post["category"]}}</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Starting Your Wellness Journey: Tips for Beginners"</a>
+                <a href="/blog_details?post={{post['id']}}">{{post["title"]}}</a>
               </h2>
 
               <div class="d-flex align-items-center">
                 <img src="static/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
-                  <p class="post-author">Mahek Vora</p>
+                  <p class="post-author">{{post["author"]}}</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2024</time>
+                    <time datetime="2022-01-01">{{post["date"]}}</time>
                   </p>
                 </div>
               </div>
 
             </article>
-          </div><!-- End post list item -->
+          </div>
+          {% endfor %}
+          <!-- End post list item -->
 
-          <div class="col-xl-4 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="static/img/blog/blog-2.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Nutrition</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">The Science Behind Personalized Nutrition with BetterU</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="static/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mahek Vora</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Feb 1, 2024</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="static/img/blog/blog-3.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Mental Health</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Finding Balance: How BetterU Supports Your Mental and Physical Health</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="static/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mahek Vora</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Mar 1, 2024</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
+          
         </div><!-- End recent posts list -->
 
       </div>

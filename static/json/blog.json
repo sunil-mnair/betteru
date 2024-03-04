@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "title": "Starting Your Wellness Journey: Tips for Beginners",
+        "category":"Tips",
+        "description": "<p>Embarking on a wellness journey can be both exciting and overwhelming. With BetterU, our goal is to make this journey as smooth and effective as possible. Whether you're new to fitness, looking to eat healthier, or seeking mental peace, here's how to start strong and stay committed.</p><ul><li>Setting Realistic Goals: Begin by setting achievable goals that motivate you. BetterU helps you define these goals and tracks your progress.</li><li>Understanding Your Body: Learn how to listen to your body's needs. Our personalized plans take into account your unique physical and nutritional requirements.</li>Incorporating Mindfulness: Wellness isn't just physical. Discover how BetterU's mental wellness resources can enhance your journey.</li>Building a Support System: Join the BetterU community to find inspiration, motivation, and support from like-minded individuals.</li></ul><p>Starting your wellness journey is a step towards a happier and healthier you. With BetterU, you're not alone. Let us guide you through each step of the way with personalized plans and a supportive community.</p>",
+        "author": "Mahek Vora",
+        "date":"Jan 1 2024"
+    },
+    {
+        "id": "2",
+        "title": "The Science Behind Personalized Nutrition with BetterU",
+        "category":"Nutrition",
+        "description": "<p>Nutrition is not one-size-fits-all. At BetterU, we believe in the power of personalized nutrition to transform health. But what's the science behind it, and how does BetterU make it work for you?</p><ul><li>Genetics and Nutrition: Explore how genetic differences affect dietary needs and how BetterU considers these factors in your meal planning.</li><li>The Role of Gut Health: Learn about the latest research on gut health and personalized nutrition, and how BetterU integrates this into your nutrition guidance.</li><li>Success Stories: Real-life examples of how BetterU users have transformed their health through personalized nutrition plans.</li></ul><p>Personalized nutrition can revolutionize your health and wellness journey. BetterU leverages scientific research to offer tailored nutrition advice, helping you eat smarter, feel better, and live healthier.</p>",
+        "author": "Mahek Vora",
+        "date":"Feb 1 2024"
+    }
+    ,
+    {
+        "id": "3",
+        "title": "Finding Balance: How BetterU Supports Your Mental and Physical Health",
+        "category":"Mental Health",
+        "description": "<p>In today's fast-paced world, finding balance between mental and physical health is more important than ever. BetterU is designed to support both aspects of your well-being, helping you achieve a harmonious balance.</p><ul><li>Holistic Health Approach: Insight into BetterU's philosophy on the interconnectedness of mental and physical health.</li><li>Tools and Resources: Overview of the tools BetterU offers for stress management, mindfulness, and emotional well-being, alongside physical fitness and nutrition.</li><li>User Experiences: Sharing stories from users who have found a healthier balance in their lives thanks to BetterU's comprehensive approach.</li></ul><p>Balancing mental and physical health is key to a fulfilling life. Discover how BetterU's integrated approach to wellness can help you find your equilibrium and thrive.</p>",
+        "author": "Mahek Vora",
+        "date":"Mar 1 2024"
+    }
+]
