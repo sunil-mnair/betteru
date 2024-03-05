@@ -9,8 +9,8 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Blog Details</h2>
-              <p>{{blog_post['title']}}</p>
+              <h2>Recipe</h2>
+              <p>{{recipe_post['title']}}</p>
             </div>
           </div>
         </div>
@@ -19,7 +19,7 @@
         <div class="container">
           <ol>
             <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/recipes">Recipes</a></li>
           </ol>
         </div>
       </nav>
@@ -36,29 +36,28 @@
             <article class="blog-details">
 
               <div class="post-img">
-                <img src="static/img/blog/{{blog_post['image']}}" alt="" class="img-fluid">
+                <img src="static/img/recipes/{{recipe_post['image']}}" alt="" class="img-fluid">
               </div>
 
-              <h2 class="title">{{blog_post['title']}}</h2>
+              <h2 class="title">{{recipe_post['title']}}</h2>
 
               <div class="meta-top">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> {{blog_post['author']}}</li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <time datetime="2020-01-01">{{blog_post['date']}}</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> {{recipe_post['author']}}</li>
+                 
                   <!-- <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li> -->
                 </ul>
               </div><!-- End meta top -->
 
               <div class="content">
-                {{blog_post['description']|getMarkdown|safe}}
+                {{recipe_post['ingredients']|getMarkdown|safe}}
+                {{recipe_post['instructions']|getMarkdown|safe}}
 
               </div><!-- End post content -->
 
               <div class="meta-bottom">
                 <i class="bi bi-folder"></i>
-                <ul class="cats">
-                  <li><a href="#">{{blog_post['category']|safe}}</a></li>
-                </ul>
+                
 
                 <!-- <i class="bi bi-tags"></i>
                 <ul class="tags">
@@ -73,7 +72,7 @@
             <div class="post-author d-flex align-items-center">
               <img src="static/img/team/mahek_vora.jpeg" class="rounded-circle flex-shrink-0" alt="">
               <div>
-                <h4>{{blog_post['author']}}</h4>
+                <h4>{{recipe_post['author']}}</h4>
                 
                 <!-- <p>
                   Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.

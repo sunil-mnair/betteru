@@ -24,7 +24,52 @@
       </nav>
     </div><!-- End Breadcrumbs -->
 
-    
+     <!-- ======= Blog Section ======= -->
+     <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 posts-list">
+
+          {% for post in recipe_list %}
+          <div class="col-xl-4 col-md-6">
+            <article>
+
+              <div class="post-img">
+                <img src="static/img/recipes/{{post['image']}}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title">
+                <a href="/recipe_details?post={{post['id']}}">{{post["title"]}}</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="static/img/team/mahek_vora.jpeg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author-list">{{post["author"]}}</p>
+                  
+                </div>
+              </div>
+
+            </article>
+          </div>
+          {% endfor %}
+          <!-- End post list item -->
+
+          
+
+        </div><!-- End blog posts list -->
+
+        <!-- <div class="blog-pagination">
+          <ul class="justify-content-center">
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </div> -->
+        <!-- End blog pagination -->
+
+      </div>
+    </section><!-- End Blog Section -->
 
   </main><!-- End #main -->
   {% endblock %}

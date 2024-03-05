@@ -1,5 +1,5 @@
 
-import os,re,json
+import os,re,json,markdown
 from urllib.request import urlopen
 from flask import Flask,render_template,request, redirect,url_for,Response,jsonify,flash,send_file,session
 
@@ -53,6 +53,17 @@ if 'home' in getcwd:
 
 with open(getcwd+"/static/json/blog.json") as file:
         blog_posts = json.load(file)
+
+with open(getcwd+"/static/json/yoga.json") as file:
+        yoga_postures = json.load(file)
+
+with open(getcwd+"/static/json/recipes.json") as file:
+        recipe_list = json.load(file)
+
+@app.template_filter()
+def getMarkdown(x):
+    x = markdown.markdown(x)
+    return x
 
 @app.route('/login',methods=['GET','POST'])
 def login():
@@ -138,7 +149,15 @@ def recipes():
     # recipes=urlopen(url)
     # recipe_list=json.loads(recipes.read())
     # print(recipe_list)
-    return render_template("recipes.html")
+    return render_template("recipes.html",recipe_list=recipe_list)
+
+@app.route('/recipe_details',methods=['GET','POST'])
+def recipe_details():
+    id = request.args.get("post")
+    recipe_post = [post for post in recipe_list if post['id']==id][0]
+
+    return render_template("recipe-details.html",recipe_post=recipe_post)
+
 
 @app.route('/sleeptracker',methods=['GET','POST'])
 def sleeptracker():
@@ -148,7 +167,7 @@ def sleeptracker():
 @app.route('/workout',methods=['GET','POST'])
 def workout():
 
-    return render_template("workout.html")
+    return render_template("workout.html",yoga_postures=yoga_postures)
 
 @app.route('/moodtracker',methods=['GET','POST'])
 def moodtracker():

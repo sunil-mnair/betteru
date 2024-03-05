@@ -1,0 +1,19 @@
+[
+    {
+        "id": "1",
+        "title": "Energizing Quinoa and Black Bean Salad",
+        "image":"recipe_1.jpeg",
+        "ingredients": "<ul><li>1 cup quinoa, rinsed</li><li>2 cups water</li><li>1 can (15 ounces) black beans, drained and rinsed</li><li>1 red bell pepper, diced</li><li>1/4 cup fresh cilantro, chopped</li><li>1 avocado, diced</li><li>1 cup cherry tomatoes, halved</li><li>1/4 cup red onion, finely chopped</li><li>1 lime, juiced</li><li>2 tablespoons olive oil</li><li>1 teaspoon ground cumin</li><li>Salt and pepper to taste</li></ul>",
+        "instructions":"<ol><li>In a medium saucepan, bring 2 cups of water to a boil. Add quinoa and a pinch of salt, reduce heat to low, cover, and simmer for about 15 minutes, or until all water is absorbed. Remove from heat and let it sit covered for 5 minutes. Fluff with a fork and allow to cool.</li><li>In a large bowl, combine cooled quinoa, black beans, red bell pepper, cilantro, avocado, cherry tomatoes, and red onion.</li><li>In a small bowl, whisk together lime juice, olive oil, ground cumin, salt, and pepper. Pour the dressing over the salad and gently toss to combine.</li><li>Serve chilled or at room temperature. Enjoy!</li></ol>",
+        "author": "Mahek Vora"
+    },
+    {
+        "id": "2",
+        "title": "Refreshing Green Smoothie Bowl",
+        "image":"recipe_2.webp",
+        "ingredients": "<ul><li>1 frozen banana, sliced</li><li>1/2 cup frozen mango chunks</li><li>1 cup baby spinach</li><li>1/2 avocado</li><li>1/2 cup unsweetened almond milk (or any plant-based milk)</li><li>1 tablespoon chia seeds</li><li>Toppings: Sliced banana, kiwi, hemp seeds, granola, and a drizzle of honey or maple syrup (optional)</li></ul>",
+        "instructions": "<ol><li>In a medium saucepan, bring 2 cups of water to a boil. Add quinoa and a pinch of salt, reduce heat to low, cover, and simmer for about 15 minutes, or until all water is absorbed. Remove from heat and let it sit covered for 5 minutes. Fluff with a fork and allow to cool.</li><li>In a large bowl, combine cooled quinoa, black beans, red bell pepper, cilantro, avocado, cherry tomatoes, and red onion.</li><li>In a small bowl, whisk together lime juice, olive oil, ground cumin, salt, and pepper. Pour the dressing over the salad and gently toss to combine.</li><li>Serve chilled or at room temperature. Enjoy this refreshing and nourishing salad that's perfect for any meal!</li></ol>",
+        "author":"Mahek Vora"
+    }
+    
+]
