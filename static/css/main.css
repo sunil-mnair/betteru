@@ -181,7 +181,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(248, 90, 64, 0.8);
+  background: #1f2f98;
   color: #fff;
 }
 
@@ -1996,7 +1996,7 @@ section {
 }
 
 .hero .icon-box:hover {
-  background: #009786;
+  background: #1f2f98;
 }
 
 .hero .icon-box:hover .title a,
@@ -2347,7 +2347,7 @@ section {
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: rgba(0, 131, 116, 0.8);
+  background: #1f2f98;
 }
 
 .blog .sidebar .categories ul {
@@ -2551,7 +2551,7 @@ section {
 }
 
 .blog .comments .reply-form .btn-primary:hover {
-  background-color: rgba(248, 90, 64, 0.8);
+  background-color: #1f2f98;
 }
 
 /*--------------------------------------------------------------
